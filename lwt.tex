@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[orange]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Microsoft YaHei}
+\setsansfont[Mapping=tex-text]{Microsoft YaHei}
+\CJKtilde
+
+% personal data
+\firstname{刘文通}
+\familyname{}
+\mobile{15680688889}                    % optional, remove the line if not wanted
+\email{vkki@vkki.me}                      % optional, remove the line if not wanted
+
+\nopagenumbers{}
+
+\begin{document}
+
+\maketitle
+
+\section{教育}
+\cventry{2012至今}{本科}{四川大学软件学院}{}{}{}
+
+\section{实习经历}
+\cventry{2015}{智翔集团实习}{}{}{}{设计并实现了一个基于~JSP~的电影票销售网站}
+
+\section{社区}
+\cventry{Blog}{\url{vkki.me}}{}{}{}{}
+\cventry{GitHub}{\url{github.com/ylhclwt}}{}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2014}
+{对不起，青春}
+{PHP, MySQL}
+{独立项目}{}
+{基于微信公众平台的电台类Web应用，包含微信~APP~端和后台管理~Web~端。用户可通过微信用语音或文字形式发布自己对青春的道歉，发送成功后可随机收听一封他人的道歉，发送的道歉经管理员审核通过后即可被展示给他人，上线一个月内已收到超过300条道歉内容。}
+\vspace*{0.8\baselineskip}
+
+\cventry{2014}
+{川大澡堂管理系统}
+{PHP, Ajax, MySQL}
+{课程项目}{}
+{此项目旨在缓解四川大学洗澡排队的问题，项目中引入了预约系统、信用积分系统、网上支付系统等，使用~Bootstrap~前端框架兼容了不同屏幕尺寸的设备，并使用~Ajax~降低移动设备的流量消耗。}
+\vspace*{0.8\baselineskip}
+
+\cventry{2014}
+{万圣节邀请函}
+{HTML, CSS3, JSONP}
+{独立项目}{}
+{为社团做的一个Web应用，通过微信朋友圈宣传社团的万圣节活动。使用~CSS3~实现全屏动画效果，使用~JSONP~实现转发计数并修改网页标题（例如：当第~3000~位用户分享到朋友圈时，被分享网页的标题将变为《万圣节邀请函 抽奖码：~3000~》）。
+此项目吸引了超过~15000~人转发，后因关注量过高被学校终止。}
+\vspace*{0.8\baselineskip}
+
+\cventry{2013-2014}
+{比特狗}
+{Android, C\#}
+{研究项目}{}
+{一个比特币查询交易系统。实现对多个~BTC、LTC~交易平台交易价格、K~线图、MACD~图、盘口数据的读取及展示，为了减少网络延迟，采用了异步读取。通过注册为系统服务，实现后台数据刷新及报警。}
+\vspace*{0.8\baselineskip}
+
+\cventry{2013}
+{四川大学学生会官网}
+{ASP, JQUERY, ACCESS}
+{独立项目}{}
+{大二接学校的外包，设计并实现了一个完整的内容管理系统及其界面。包含文章分类、权限管理，文章发布、图片上传，安全方面做了防~SQL~注入、防~XSS、防路径猜解等，累计访问量超过13万次。}
+\vspace*{0.8\baselineskip}
+
+\cventry{2012-2013}
+{基于安卓平台的个人助理}
+{Android}
+{研究项目}{}
+{此项目旨在创建一个个人日程助理，用户输入提醒后，触发提醒条件时（如时间、位置、来电、短信等）则会弹出提醒。程序通过注册为服务实现后台运行。}
+\renewcommand{\baselinestretch}{1.0}
+
+\section{活动}
+\cventry{2012-2013}{四川大学学生会宣传部优秀干事}{}{}{}{}
+\cventry{2013-2014}{四川大学学生会宣传部副部长}{}{}{}{}
+\cventry{2014-2015}{四川大学零壹广播剧社宣传部部长}{}{}{}{}
+
+\section{奖项}
+\cventry{2014}{四川大学单项一等奖学金}{}{}{}{}
+\cventry{2013}{四川大学单项一等奖学金}{}{}{}{}
+\cventry{2013}{四川大学优秀学生}{}{}{}{}
+\cventry{2013}{蓝桥杯四川赛区三等奖}{}{}{}{}
+
+\section{技能}
+\cventry{语言}{C, C++, Java, Python}{}{}{}{}
+\cventry{Web}{JavaScript, CSS, PHP, JSP, ASP, SQL}{}{}{}{}
+\cventry{客户端}{Android, iOS}{}{}{}{}
+\cventry{英语}{CET-6}{TED~和~Crash~Course~翻译者}{}{}{}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
